@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+    # trigger only when there is a change in 
+    # stories and components change
+    paths: ["stories/**", "src/components/**"]
 
 jobs:
   build:
