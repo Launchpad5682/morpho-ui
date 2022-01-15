@@ -71,6 +71,7 @@
   },
   "dependencies": {
     "@storybook/addon-a11y": "^6.4.13",
+    "postcss": "^8.4.5",
     "rollup-plugin-postcss": "^4.0.2"
   }
 }
