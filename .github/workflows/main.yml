@@ -26,7 +26,7 @@ jobs:
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
-        
+
       - uses: actions/cache@v2
         id: yarn-cache
         with:
@@ -40,3 +40,12 @@ jobs:
 
       - name: Build Morpho-UI
         run: yarn build-storybook
+
+      - name: Deploy Morpho-UI 🚀
+        uses: JamesIves/github-pages-deploy-action@3.6.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: main # The branch the action should deploy to.
+          FOLDER: storybook-static # The folder that the build-storybook script generates files.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
+          TARGET_FOLDER: docs # The folder that we serve our Storybook files from
