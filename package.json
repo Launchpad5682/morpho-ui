@@ -5,7 +5,8 @@
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
-    "src"
+    "src",
+    "src/styles/*.css"
   ],
   "engines": {
     "node": ">=10"
