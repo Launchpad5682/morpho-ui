@@ -8,7 +8,7 @@ const meta: Meta = {
 
 export default meta;
 
-export const Default = (args) => <Avatar {...args} />;
+const Default = (args) => <Avatar {...args} />;
 
 export const Round = Default.bind({});
 
