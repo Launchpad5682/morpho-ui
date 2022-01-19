@@ -23,7 +23,7 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
   onDismiss?: MouseEventHandler;
 }
 
- /**
+/**
   * @param children
   * It contains the text and bottom icons or any customized component which 
   * should be in div and passed.
@@ -89,7 +89,6 @@ export const Card = ({
           {dismiss === true ? (
             <VscClose className="icon--size dismiss__flexrow--position" />
           ) : null}
-
           {children}
         </div>
       </div>
