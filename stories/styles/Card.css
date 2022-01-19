@@ -1,0 +1,18 @@
+@import url(../../src/styles/colors.css);
+
+.paragraph {
+  padding: 0 1rem;
+  line-height: 1.4em;
+}
+
+.bottom-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+
+.icon-size {
+  height: var(--icon-size);
+  width: var(--icon-size);
+}
