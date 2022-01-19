@@ -1,0 +1,12 @@
+@import url(./colors.css);
+
+.icon--size {
+  height: var(--icon-size);
+  width: var(--icon-size);
+}
+
+.icon--size:hover {
+  border-radius: 50%;
+  background-color: rgb(226, 226, 226);
+  color: black
+}
