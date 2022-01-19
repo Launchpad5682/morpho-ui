@@ -1,0 +1,88 @@
+@import url(../styles/colors.css);
+
+.card__flexcolumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__flexrow {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  background-color: blue;
+}
+
+.card__textoverlay {
+  position: relative;
+}
+
+.card__textonly {
+}
+
+/*Sizes for card*/
+.card__flexcolumn--lg {
+  width: 25rem;
+}
+
+.card__flexcolumn--md {
+  width: 20rem;
+}
+
+.card__flexcolumn--sm {
+  width: 15rem;
+}
+
+.card__flexrow--lg {
+}
+
+.card__flexrow--md {
+  height: 10rem;
+  min-width: 25rem;
+  width: fit-content;
+}
+
+.card__flexrow--sm {
+}
+
+.card--shadow {
+  box-shadow: rgb(131, 131, 131) 4px 4px 15px;
+}
+
+.card__flexrow--headingoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+}
+
+.card__flexcolumn--headingoverlay {
+  position: absolute;
+  bottom: 1.8rem;
+  left: 0;
+  color: white;
+}
+
+.container {
+  position: relative;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding: 0 var(--paddling-text);
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0 var(--paddling-text);
+}
+
+.image--fitheight {
+  height: 100%;
+}
+
+.image--fitwidth {
+  width: 100%;
+}
