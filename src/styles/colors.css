@@ -2,7 +2,9 @@
   --hint-of-elusive-blue: #d2dae2;
   --mint-green: #0be881;
   --green-teal: #05c46b;
+  --green-teal-light: #bff7dd;
   --tomato-red: #eb2f06;
+  --tomato-red-light: #ffcfc4;
   --primary-light: #e3f2fd;
   --primary-main: #90caf9;
   --primary-dark: #42a5f5;
@@ -18,6 +20,7 @@
   --info-light: #4fc3f7;
   --info-main: #29b6f6;
   --info-dark: #0288d1;
+  --info-dark-light: #abdcf7;
   --success-light: #81c784;
   --success-main: #66bb6a;
   --success-dark: #388e3c;
