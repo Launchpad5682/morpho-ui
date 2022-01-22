@@ -1,18 +1,17 @@
 import { Meta } from '@storybook/react';
+import { Modal } from '../src/Modal/Modal';
 import { Chips } from '../src/Chips/Chips';
 
 const meta: Meta = {
-  title: 'Chips',
-  component: Chips,
+  title: 'Modal',
+  component: Modal,
 };
 
 export default meta;
 
-const Default = (args) => <Chips {...args} />;
+const Default = (args) => <Modal {...args} />;
 
-export const Basic = Default.bind({});
-
-export const Stacked = Default.bind({});
+export const SimpleModal = Default.bind({});
 
 const arr: {
   id: string;
@@ -28,13 +27,7 @@ const arr: {
   { id: '12g', text: 'Beetal', color: 'gray' },
 ];
 
-Basic.args = {
-  title: 'Basic Chips',
-  chips: arr,
-};
-
-Stacked.args = {
-  chips: arr,
-  variant: 'stacked',
-  title: 'Stacked Chips',
+SimpleModal.args = {
+  children: <Chips chips={arr} variant="stacked" title="Stacked Chips" />,
+  heading: 'Heading',
 };
