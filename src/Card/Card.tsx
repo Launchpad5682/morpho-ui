@@ -55,7 +55,6 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
 
 export const Card = ({
   children,
-  //   type,
   type,
   imageURL = '',
   align = 'vertical',
@@ -87,7 +86,10 @@ export const Card = ({
         </div>
         <div className="container">
           {dismiss === true ? (
-            <VscClose className="icon--size dismiss__flexrow--position" />
+            <VscClose
+              className="icon--size dismiss__flexrow--position"
+              onClick={onDismiss}
+            />
           ) : null}
           {children}
         </div>
