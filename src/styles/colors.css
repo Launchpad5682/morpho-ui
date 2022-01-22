@@ -1,10 +1,42 @@
+/*Success/peaceful optimism - green*/
+/*Information - blue*/
+/*Danger or focus - red*/
+/*Warning or grab attention -yellow*/
+/*Excitement - pink*/
+/*Minimalistic sophistication - black*/
+
 :root {
   --hint-of-elusive-blue: #d2dae2;
+  --flat-flesh: #fad390;
+  --squash-blossom: #f6b93b;
+  --iceland-poppy: #fa983a;
+  --carrot-orange: #e58e26;
+  --melon-melody: #f8c291;
+  --mandarin-red: #e55039;
+  --tomato-red: #eb2f06;
+  --jalapeno-red: #b71540;
+  --livid: #6a89cc;
+  --azraq-blue: #4a69bd;
+  --yue-guang-lan-blue: #1e3799;
+  --dark-sapphire: #0c2461;
+  --spray: #82ccdd;
+  --dupain: #60a3bc;
+  --good-samaritan: #3c6382;
+  --forest-blues: #0a3d62;
+  --paradise-green: #b8e994;
+  --aurora-green: #78e08f;
+  --water-fall: #38ada9;
+  --reef-encounter: #079992;
   --mint-green: #0be881;
   --green-teal: #05c46b;
-  --green-teal-light: #bff7dd;
-  --tomato-red: #eb2f06;
-  --tomato-red-light: #ffcfc4;
+  --black: #000000;
+  --white: #ffffff;
+  --paddling-text: 1.4rem;
+  --icon-size: 25px;
+  --padding-general: 5px;
+}
+
+/*
   --primary-light: #e3f2fd;
   --primary-main: #90caf9;
   --primary-dark: #42a5f5;
@@ -24,7 +56,4 @@
   --success-light: #81c784;
   --success-main: #66bb6a;
   --success-dark: #388e3c;
-  --paddling-text: 1.4rem;
-  --icon-size: 25px;
-  --padding-general: 5px;
-}
+*/
