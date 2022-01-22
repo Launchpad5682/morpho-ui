@@ -11,14 +11,16 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
     | undefined;
   title: string;
   variant?: 'basic' | 'stacked';
-  removeHandler?: MouseEventHandler<SVGAElement>;
+  onCross?: MouseEventHandler;
 }
 
 export const Chips = ({
   chips = undefined,
   title = '',
   variant = 'basic',
-  removeHandler,
+  onCross = () => {
+    console.log('removed');
+  },
 }: Props) => {
   return (
     <>
@@ -28,7 +30,7 @@ export const Chips = ({
           ? chips.map((chip) => (
               <span className={`chip--design chip--${chip.color}`}>
                 {chip.text}
-                <VscClose onClick={removeHandler} className="chip__closeicon" />
+                <VscClose onClick={onCross} className="chip__closeicon" />
               </span>
             ))
           : null}
