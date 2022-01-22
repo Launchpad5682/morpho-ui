@@ -32,6 +32,9 @@
   --black: #000000;
   --white: #ffffff;
   --hover-gray: #2c2828;
+  --background-color: #262d34;
+  --dark-background-color: #08111b;
+  --blur-background-color: #0000001a;
   --paddling-text: 1.4rem;
   --icon-size: 25px;
   --padding-general: 5px;
