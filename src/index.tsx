@@ -5,3 +5,6 @@ export { Button } from './Button/Button';
 export { Card } from './Card/Card';
 export { Chips } from './Chips/Chips';
 export { Image } from './Image/Image';
+export { Modal } from './Modal/Modal';
+export { SnackBar } from './SnackBar/SnackBar';
+export { Typography } from './Typography/Typography';
