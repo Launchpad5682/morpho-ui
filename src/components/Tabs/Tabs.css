@@ -1,0 +1,70 @@
+@import url(../../styles/colors.css);
+
+.tabs__navlist {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  justify-content: start;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.tab__navlink {
+  font-weight: 700;
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  text-decoration: none;
+  min-width: fit-content;
+  /* color: black; */
+}
+
+.tab__navlink--white {
+  color: white;
+}
+
+.tab__navlink--black {
+  color: black;
+}
+
+.sidebar__navlink:hover {
+  color: var(--hover-color);
+  background-color: white;
+  transition: ease-in-out;
+  transition-duration: 3ms;
+}
+
+.tabs__navlink--active {
+  /* color: var(--hover-color); */
+  border-bottom: solid 3px;
+  /* color: var(--jalapeno-red); */
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* background-color: white; */
+}
+
+/* 'red' | 'green' | 'yellow' | 'blue' | 'pink'  */
+
+.navlink__active--red {
+  color: var(--tomato-red);
+}
+
+.navlink__active--green {
+  color: var(--green-teal);
+}
+
+.navlink__active--yellow {
+  color: var(--squash-blossom);
+}
+
+.navlink__active--blue {
+  color: var(--azraq-blue);
+}
+
+.navlink__active--pink {
+  color: var(--jalapeno-red);
+}
