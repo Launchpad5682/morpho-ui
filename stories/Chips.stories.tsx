@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Chips } from '../src/Chips/Chips';
+import { Chips } from '../src/components/Chips/Chips';
 
 const meta: Meta = {
   title: 'Chips',

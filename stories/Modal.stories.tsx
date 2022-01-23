@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/react';
-import { Modal } from '../src/Modal/Modal';
-import { Chips } from '../src/Chips/Chips';
+import { Modal } from '../src/components/Modal/Modal';
+import { Chips } from '../src/components/Chips/Chips';
 
 const meta: Meta = {
   title: 'Modal',

@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/react';
 import { BiMessage } from 'react-icons/bi';
-import { Avatar } from '../src/Avatar/Avatar';
-import { Badge } from '../src/Badge/Badge';
+import { Avatar } from '../src/components/Avatar/Avatar';
+import { Badge } from '../src/components/Badge/Badge';
 
 const meta: Meta = {
   title: 'Badge',

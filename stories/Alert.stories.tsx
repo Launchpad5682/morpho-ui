@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Alert } from '../src/Alert/Alert';
+import { Alert } from '../src/components/Alert/Alert';
 
 const meta: Meta = {
   title: 'Alert',
@@ -8,9 +8,7 @@ const meta: Meta = {
 
 export default meta;
 
-const Default = (args) => (
-  <Alert {...args}>This is an alert message</Alert>
-);
+const Default = (args) => <Alert {...args}>This is an alert message</Alert>;
 
 export const SmallAlert = Default.bind({});
 export const MediumAlert = Default.bind({});

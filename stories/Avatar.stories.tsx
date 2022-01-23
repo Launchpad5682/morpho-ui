@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Avatar } from '../src/Avatar/Avatar';
+import { Avatar } from '../src/components/Avatar/Avatar';
 
 const meta: Meta = {
   title: 'Avatar',

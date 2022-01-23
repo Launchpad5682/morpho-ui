@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { Card } from '../src/Card/Card';
+import { Card } from '../src/components/Card/Card';
 import { WiAlien, WiBarometer, WiCelsius } from 'react-icons/wi';
 import './styles/Card.css';
 

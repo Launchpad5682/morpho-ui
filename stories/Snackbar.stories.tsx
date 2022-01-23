@@ -1,5 +1,5 @@
 import { Meta } from '@storybook/react';
-import { SnackBar } from '../src/SnackBar/SnackBar';
+import { SnackBar } from '../src/components/SnackBar/SnackBar';
 
 const meta: Meta = {
   title: 'Snackbar',

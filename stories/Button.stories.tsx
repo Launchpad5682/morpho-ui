@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react';
-import { Button } from '../src/Button/Button';
+import { Button } from '../src/components/Button/Button';
 import { BiAddToQueue, BiAlarm } from 'react-icons/bi';
 // metadata
 const meta: Meta = {
