@@ -10,10 +10,9 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
 }
 
 /**
- * Always use it in the first component/ or main component
  * How to use ?
- * import and use Modal component in the root component and
- * then use state to switch on and off the modal component.
+ * import and use Modal component and then use 
+ * state to switch on and off the modal component.
  * @param children
  * Inject any of the React component as a children.
  * @param heading
