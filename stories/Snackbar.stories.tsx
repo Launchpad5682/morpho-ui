@@ -10,27 +10,39 @@ export default meta;
 
 const Default = (args) => <SnackBar {...args} />;
 
-export const Baseline = Default.bind({});
-export const Leading = Default.bind({});
-export const Stacked = Default.bind({});
+// export const Baseline = Default.bind({});
+// export const Leading = Default.bind({});
+// export const Stacked = Default.bind({});
 
-Baseline.args = {
-  variant: 'baseline',
-  color: 'red',
-  message: "Can't send photo. Retry in 5 seconds",
-  buttonText: 'RETRY',
-};
+export const Baseline = () => (
+  <div style={{ height: '100vh' }}>
+    <SnackBar
+      variant="baseline"
+      color="red"
+      message="Can't send photo. Retry in 5 seconds"
+      buttonText="RETRY"
+    />
+  </div>
+);
 
-Leading.args = {
-  variant: 'leading',
-  color: 'green',
-  message: "Can't send photo. Retry in 5 seconds",
-  buttonText: 'RETRY',
-};
+export const Leading = () => (
+  <div style={{ height: '100vh' }}>
+    <SnackBar
+      variant="leading"
+      color="blue"
+      message="Can't send photo. Retry in 5 seconds"
+      buttonText="RETRY"
+    />
+  </div>
+);
 
-Stacked.args = {
-  variant: 'stacked',
-  color: 'blue',
-  message: "Can't send photo. Retry in 5 seconds",
-  buttonText: 'RETRY',
-};
+export const Stacked = () => (
+  <div style={{ height: '100vh' }}>
+    <SnackBar
+      variant="stacked"
+      color="yellow"
+      message="Can't send photo. Retry in 5 seconds"
+      buttonText="RETRY"
+    />
+  </div>
+);
