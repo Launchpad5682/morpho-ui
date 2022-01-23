@@ -5,6 +5,7 @@
   color: var(--white);
   display: flex;
   align-items: center;
+  position: fixed;
   border-radius: 6px;
   gap: 8px;
   width: 25rem;
@@ -15,7 +16,6 @@
 
 .snackbar--baseline {
   flex-direction: row;
-  position: absolute;
   bottom: 20px;
   left: 0;
   right: 0;
@@ -25,14 +25,12 @@
 
 .snackbar--leading {
   flex-direction: row;
-  position: absolute;
   bottom: 20px;
   left: 20px;
 }
 
 .snackbar--stacked {
   flex-direction: row;
-  position: absolute;
   bottom: 20px;
   flex-direction: column;
 }

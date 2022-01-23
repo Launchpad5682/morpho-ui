@@ -12,9 +12,6 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
 }
 
 /**
- * SnackBar must be used in the main component as it needs
- * to be absolute to viewports with global state to on/off
- * when needed.
  * @param variant
  * Choose a variant from baseline, stacked and leading.
  * @param message
