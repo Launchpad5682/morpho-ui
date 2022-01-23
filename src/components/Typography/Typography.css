@@ -1,0 +1,51 @@
+.h1__typography,
+.h2__typography,
+.h3__typography,
+.h4__typography,
+.h5__typography,
+.h6__typography,
+.body1__typography,
+.body2__typography,
+.button__typography,
+.caption__typography,
+.overline__typography {
+  padding: 0;
+  margin: 0;
+}
+
+.h1__typography {
+}
+.h2__typography {
+}
+.h3__typography {
+}
+.h4__typography {
+}
+.h5__typography {
+}
+.h6__typography {
+}
+
+.body1__typography {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.body2__typography {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.button__typography {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.caption__typography {
+  font-size: 0.6rem;
+}
+
+.overline__typography {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}

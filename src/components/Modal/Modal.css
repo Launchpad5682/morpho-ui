@@ -1,0 +1,64 @@
+@import url(../../styles/colors.css);
+@import url(../../styles/icon.css);
+
+.fullscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blur-background-color);
+  color: white;
+}
+
+.modal__container {
+  display: flex;
+  opacity: 1;
+  flex-direction: column;
+  width: 35rem;
+  height: 20rem;
+  padding: 10px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: var(--background-color) 5px 5px 5px;
+}
+
+.modal__container--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal__container--body {
+  overflow-y: scroll;
+}
+
+.modal__container--heading {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 320px) {
+  .modal__container {
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    width: 15rem;
+    height: 15rem;
+    padding: 10px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 330px) {
+  .modal__container {
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+    padding: 10px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+  }
+}
