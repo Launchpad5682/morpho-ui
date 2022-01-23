@@ -4,6 +4,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 // using memory router for making the routing based
 // component like tabs or side drawer
+// https://stackoverflow.com/questions/58909666/storybook-w-react-router-you-should-not-use-link-outside-router
 addDecorator((story) => (
   <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>
 ));
