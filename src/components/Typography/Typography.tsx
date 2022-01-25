@@ -17,6 +17,7 @@ export interface Props extends HTMLAttributes<HTMLTextAreaElement> {
     | 'button'
     | 'caption'
     | 'overline';
+  textColor?: 'white' | 'black' | 'red' | 'green' | 'blue' | 'yellow' | 'pink';
 }
 
 /**
@@ -29,25 +30,49 @@ export interface Props extends HTMLAttributes<HTMLTextAreaElement> {
  * @returns Typography
  */
 
-export const Typography = ({ variant, children }: Props) => {
+export const Typography = ({ variant, children, textColor }: Props) => {
   switch (variant) {
     case 'h1':
-      return <h1 className="h1__typography">{children}</h1>;
+      return (
+        <h1 className={`h1__typography typography--${textColor}`}>
+          {children}
+        </h1>
+      );
 
     case 'h2':
-      return <h2 className="h2__typography">{children}</h2>;
+      return (
+        <h2 className={`h2__typography typography--${textColor}`}>
+          {children}
+        </h2>
+      );
 
     case 'h3':
-      return <h3 className="h3__typography">{children}</h3>;
+      return (
+        <h3 className={`h3__typography typography--${textColor}`}>
+          {children}
+        </h3>
+      );
 
     case 'h4':
-      return <h4 className="h4__typography">{children}</h4>;
+      return (
+        <h4 className={`h4__typography typography--${textColor}`}>
+          {children}
+        </h4>
+      );
 
     case 'h5':
-      return <h5 className="h5__typography">{children}</h5>;
+      return (
+        <h5 className={`h5__typography typography--${textColor}`}>
+          {children}
+        </h5>
+      );
 
     case 'h6':
-      return <h6 className="h6__typography">{children}</h6>;
+      return (
+        <h6 className={`h6__typography typography--${textColor}`}>
+          {children}
+        </h6>
+      );
 
     case 'subtitle1':
     case 'subtitle2':
@@ -55,11 +80,19 @@ export const Typography = ({ variant, children }: Props) => {
 
     case 'body1':
     case 'body2':
-      return <p className={`${variant}__typography`}>{children}</p>;
+      return (
+        <p className={`${variant}__typography typography--${textColor}`}>
+          {children}
+        </p>
+      );
 
     case 'button':
     case 'caption':
     case 'overline':
-      return <text className={`${variant}__typography`}>{children}</text>;
+      return (
+        <text className={`${variant}__typography typography--${textColor}`}>
+          {children}
+        </text>
+      );
   }
 };
