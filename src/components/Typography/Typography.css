@@ -10,7 +10,8 @@
 .body2__typography,
 .button__typography,
 .caption__typography,
-.overline__typography {
+.overline__typography,
+.icon__typography {
   padding: 0;
   margin: 0;
 }
