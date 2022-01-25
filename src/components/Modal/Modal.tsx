@@ -6,12 +6,12 @@ import './Modal.css';
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   heading: string;
-  onClose?: MouseEventHandler<SVGAElement>;
+  onClose?: MouseEventHandler;
 }
 
 /**
  * How to use ?
- * import and use Modal component and then use 
+ * import and use Modal component and then use
  * state to switch on and off the modal component.
  * @param children
  * Inject any of the React component as a children.
@@ -26,6 +26,7 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
 export const Modal = ({ heading, children, onClose }: Props) => {
   return (
     <div className="fullscreen">
+      <div className="modal" onClick={onClose}></div>
       <div className="modal__container">
         <div className="modal__container--header">
           <span className="modal__container--heading">{heading}</span>

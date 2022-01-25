@@ -7,11 +7,19 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: hsl(0, 0%, 87%, 10%);
+  color: var(--white);
+}
+
+.modal {
+  background-color: rgba(222, 222, 222, 0.2);
   color: white;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
 .modal__container {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   width: 35rem;
@@ -20,6 +28,7 @@
   background-color: var(--background-color);
   border-radius: 10px;
   box-shadow: var(--background-color) 5px 5px 5px;
+  overflow-y: hidden;
 }
 
 .modal__container--header {
