@@ -16,7 +16,8 @@ export interface Props extends HTMLAttributes<HTMLTextAreaElement> {
     | 'body2'
     | 'button'
     | 'caption'
-    | 'overline';
+    | 'overline'
+    | 'icon';
   textColor?: 'white' | 'black' | 'red' | 'green' | 'blue' | 'yellow' | 'pink';
 }
 
@@ -93,6 +94,7 @@ export const Typography = ({
     case 'button':
     case 'caption':
     case 'overline':
+    case 'icon':
     default:
       return (
         <text className={`${variant}__typography typography--${textColor}`}>

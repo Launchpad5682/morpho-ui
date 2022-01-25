@@ -93,3 +93,20 @@
 .typography--pink {
   color: var(--jalapeno-red);
 }
+
+/*Icon typography*/
+.icon__typography {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  .icon__typography {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 834px) {
+  .icon__typography {
+    font-size: 1.5rem;
+  }
+}
