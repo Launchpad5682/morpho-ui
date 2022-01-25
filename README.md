@@ -1,7 +1,6 @@
-# <center>Morpho-UI</center>
-<center><img src="./assets/logo.png" height="120px"/></center>
-
-## <center>Elegant, modular and easy-to-use react-based component library
+<h1 align="center">Morpho-UI</h1>
+<p align="center"><img src="./assets/logo.png" height="120px" align="center"/></p>
+<h2 align="center">Elegant, modular and easy-to-use react-based component library</h2>
 </center>
 
 ### Tech Stack
