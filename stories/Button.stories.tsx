@@ -17,7 +17,7 @@ const Default = (args) => <Button {...args}></Button>;
 
 export const Solid = Default.bind({});
 export const Outline = Default.bind({});
-export const Icon = Default.bind({});
+export const IconButton = Default.bind({});
 export const FloatingAction = Default.bind({});
 
 Default.args = {
@@ -34,7 +34,7 @@ Outline.args = {
   children: 'Click Me',
 };
 
-Icon.args = {
+IconButton.args = {
   variant: 'icon',
   icon: <BiAlarm />,
   children: 'Alarm',
