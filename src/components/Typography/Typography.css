@@ -16,19 +16,72 @@
   margin: 0;
 }
 
+/*heading typography*/
 .h1__typography {
+  font-size: 4rem;
+  text-align: center;
 }
 .h2__typography {
+  font-size: 3rem;
+  text-align: center;
 }
 .h3__typography {
+  font-size: 2rem;
 }
 .h4__typography {
+  font-size: 1rem;
 }
 .h5__typography {
+  font-size: 0.8rem;
 }
 .h6__typography {
+  font-size: 0.7rem;
 }
 
+/*mobile responsive heading*/
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  .h1__typography {
+    font-size: 2rem;
+  }
+  .h2__typography {
+    font-size: 1.5rem;
+  }
+  .h3__typography {
+    font-size: 1.2rem;
+  }
+  .h4__typography {
+    font-size: 1rem;
+  }
+  .h5__typography {
+    font-size: 0.8rem;
+  }
+  .h6__typography {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 834px) {
+  .h1__typography {
+    font-size: 2.5rem;
+  }
+  .h2__typography {
+    font-size: 2rem;
+  }
+  .h3__typography {
+    font-size: 1.8rem;
+  }
+  .h4__typography {
+    font-size: 1.5rem;
+  }
+  .h5__typography {
+    font-size: 1rem;
+  }
+  .h6__typography {
+    font-size: 0.8rem;
+  }
+}
+
+/*body typogrphy*/
 .body1__typography {
   font-size: 1.2rem;
   line-height: 1.5rem;
@@ -39,6 +92,34 @@
   line-height: 1.2rem;
 }
 
+@media screen and (min-width: 320px) and (max-width: 834px) {
+  .body1__typography {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .body2__typography {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+}
+
+/*Subtitle typogrphy*/
+.subtitle1__typography {
+  font-size: 10px;
+}
+
+.subtitle2__typogrphy {
+  font-size: 12px;
+}
+
+/*mobile responsive subtitle*/
+@media screen and (min-width: 320px) and (max-width: 414px) {
+}
+@media screen and (min-width: 414px) and (max-width: 834px) {
+}
+
+/*Caption Typography*/
 .caption__typography {
   font-size: 0.6rem;
 }
@@ -46,6 +127,12 @@
 .overline__typography {
   font-size: 0.6rem;
   text-transform: uppercase;
+}
+
+/*mobile responsive subtitle*/
+@media screen and (min-width: 320px) and (max-width: 414px) {
+}
+@media screen and (min-width: 414px) and (max-width: 834px) {
 }
 
 /*Button Typography*/
