@@ -1,3 +1,5 @@
+@import url(../../styles/colors.css);
+
 .h1__typography,
 .h2__typography,
 .h3__typography,
@@ -36,11 +38,6 @@
   line-height: 1.2rem;
 }
 
-.button__typography {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
 .caption__typography {
   font-size: 0.6rem;
 }
@@ -48,4 +45,51 @@
 .overline__typography {
   font-size: 0.6rem;
   text-transform: uppercase;
+}
+
+/*Button Typography*/
+.button__typography {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  .button__typography {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 834px) {
+  .button__typography {
+    font-size: 1rem;
+  }
+}
+
+/*typography color*/
+.typography--white {
+  color: var(--white);
+}
+
+.typography--black {
+  color: var(--black);
+}
+
+.typography--red {
+  color: var(--tomato-red);
+}
+
+.typography--green {
+  color: var(--green-teal);
+}
+
+.typography--blue {
+  color: var(--yue-guang-lan-blue);
+}
+
+.typography--yellow {
+  color: var(--squash-blossom);
+}
+
+.typography--pink {
+  color: var(--jalapeno-red);
 }
