@@ -30,7 +30,11 @@ export interface Props extends HTMLAttributes<HTMLTextAreaElement> {
  * @returns Typography
  */
 
-export const Typography = ({ variant, children, textColor }: Props) => {
+export const Typography = ({
+  variant = 'overline',
+  children,
+  textColor,
+}: Props) => {
   switch (variant) {
     case 'h1':
       return (
@@ -89,6 +93,7 @@ export const Typography = ({ variant, children, textColor }: Props) => {
     case 'button':
     case 'caption':
     case 'overline':
+    default:
       return (
         <text className={`${variant}__typography typography--${textColor}`}>
           {children}
