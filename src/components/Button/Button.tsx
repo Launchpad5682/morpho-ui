@@ -1,11 +1,13 @@
 import './Button.css';
 import React, { HTMLAttributes, ReactNode } from 'react';
+import { Typography } from '../..';
 
 export interface Props extends HTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
   variant: 'solid' | 'outline' | 'floating';
   size: 'sm' | 'md' | 'lg';
-  color?: 'blue' | 'green' | 'red';
+  rounded?: 'sm' | 'md' | 'lg';
+  color?: 'red' | 'green' | 'blue' | 'yellow' | 'pink';
   icon?: ReactNode;
   link?: string;
 }
@@ -27,6 +29,7 @@ export const Button = ({
   children = null,
   variant,
   color = 'green',
+  rounded = 'sm',
   size,
   icon = null,
 }: Props) => {
@@ -43,7 +46,11 @@ export const Button = ({
     ${`button__floating button--${color}`}
     `}
     >
-      {icon !== null ? icon : null}
+      {icon !== null ? (
+        <Typography variant="icon" textColor="white">
+          {icon}
+        </Typography>
+      ) : null}
     </button>
   ) : (
     <button
@@ -55,11 +62,23 @@ export const Button = ({
       variant === 'solid'
         ? `button__solid button--${color}`
         : `button__outline button__outline--${color}`
-    }
+    } button__rounded--${rounded} ${icon !== null ? 'button__icon' : ''}
     `}
     >
-      {icon !== null ? icon : null}
-      {children}
+      {icon !== null ? (
+        <Typography
+          variant="icon"
+          textColor={variant === 'outline' ? color : 'white'}
+        >
+          {icon}
+        </Typography>
+      ) : null}
+      <Typography
+        variant="button"
+        textColor={variant === 'outline' ? color : 'white'}
+      >
+        {children}
+      </Typography>
     </button>
   );
 };
