@@ -1,4 +1,5 @@
 import React, { HTMLAttributes } from 'react';
+import { Typography } from '../..';
 import { CustomNavLink } from '../../helper/CustomNavLink/CustomNavLink';
 import './Tabs.css';
 
@@ -27,7 +28,7 @@ export const Tabs = ({ navList, color }: Props) => {
               className={`tab__navlink tab__navlink--${color}`}
               to={navItem.to}
             >
-              {navItem.name}
+              <Typography variant='subtitle2'> {navItem.name}</Typography>
             </CustomNavLink>
           ))
         : null}
