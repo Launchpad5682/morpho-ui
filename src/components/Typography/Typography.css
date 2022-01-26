@@ -50,11 +50,11 @@
 
 /*Subtitle typogrphy*/
 .subtitle1__typography {
-  font-size: 10px;
+  font-size: 1.5rem;
 }
 
-.subtitle2__typogrphy {
-  font-size: 12px;
+.subtitle2__typography {
+  font-size: 2rem;
 }
 
 /*mobile responsive subtitle*/
@@ -65,11 +65,11 @@
 
 /*Caption Typography*/
 .caption__typography {
-  font-size: 0.6rem;
+  font-size: 1.5rem;
 }
 
 .overline__typography {
-  font-size: 0.6rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 

@@ -82,9 +82,9 @@ export const Typography = ({
     case 'subtitle1':
     case 'subtitle2':
       return (
-        <text className={`${variant}__typography typography--${textColor}`}>
+        <span className={`${variant}__typography typography--${textColor}`}>
           {children}
-        </text>
+        </span>
       );
 
     case 'body1':
