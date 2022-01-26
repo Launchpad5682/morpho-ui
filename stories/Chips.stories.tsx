@@ -25,7 +25,7 @@ const arr: {
   { id: '12d', text: 'Pears', color: 'green' },
   { id: '12e', text: 'Indigo', color: 'blue' },
   { id: '12f', text: 'Grapes', color: 'black' },
-  { id: '12g', text: 'Beetal', color: 'gray' },
+  { id: '12g', text: 'Beetle', color: 'gray' },
 ];
 
 Basic.args = {
