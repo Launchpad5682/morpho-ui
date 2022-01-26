@@ -17,11 +17,12 @@
 .chip--design {
   padding: 5px 10px;
   border-radius: 15px;
-  font-size: 1rem;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .chip__closeicon:hover {

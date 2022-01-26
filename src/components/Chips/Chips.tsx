@@ -1,5 +1,6 @@
 import React, { HTMLAttributes, MouseEventHandler } from 'react';
 import { VscClose } from 'react-icons/vsc';
+import { Typography } from '../..';
 import './Chips.css';
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
@@ -38,13 +39,15 @@ export const Chips = ({
 }: Props) => {
   return (
     <>
-      {title !== '' ? <h4>{title}</h4> : null}
+      {title !== '' ? <Typography variant="h4">{title}</Typography> : null}
       <div className={`chips__container--${variant}`}>
         {chips !== undefined
           ? chips.map((chip) => (
               <span className={`chip--design chip--${chip.color}`} id={chip.id}>
-                {chip.text}
-                <VscClose onClick={onCross} className="chip__closeicon" />
+                <Typography variant="subtitle2">{chip.text} </Typography>
+                <Typography variant="subtitle2">
+                  <VscClose onClick={onCross} className="chip__closeicon" />
+                </Typography>
               </span>
             ))
           : null}

@@ -55,6 +55,7 @@
 
 .subtitle2__typography {
   font-size: 2rem;
+  display: inline-flex;
 }
 
 /*mobile responsive subtitle*/
@@ -118,6 +119,7 @@
 .icon__typography {
   /* font-size: 2rem; */
   font-size: clamp(10px, 2vw, 4rem);
+  display: inline-flex;
 }
 
 /* @media screen and (min-width: 320px) and (max-width: 414px) {
