@@ -51,11 +51,14 @@
 /*Subtitle typogrphy*/
 .subtitle1__typography {
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .subtitle2__typography {
   font-size: 2rem;
-  display: inline-flex;
+  display: flex;
+  align-items: center;
 }
 
 /*mobile responsive subtitle*/
