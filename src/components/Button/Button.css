@@ -12,15 +12,15 @@
 
 /*Button sizes*/
 .button--sm {
-  height: 20px;
+  padding: 1rem;
 }
 
 .button--md {
-  height: 30px;
+  padding: 1.5rem;
 }
 
 .button--lg {
-  height: 35px;
+  padding: 2rem;
 }
 
 @media screen and (min-width: 320px) and (max-width: 414px) {
@@ -128,5 +128,9 @@
 /*button icon*/
 
 .button__icon {
-  align-content: baseline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }

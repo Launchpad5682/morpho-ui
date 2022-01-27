@@ -13,7 +13,7 @@ export interface Props extends HTMLAttributes<HTMLButtonElement> {
 }
 
 /**
- *
+ * sm button size is good to use,sm for floating action 
  * @param children
  * pass text as a children.
  * @param variant
