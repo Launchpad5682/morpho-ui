@@ -1,5 +1,5 @@
 import './Button.css';
-import React, { HTMLAttributes, ReactNode } from 'react';
+import React, { HTMLAttributes, MouseEventHandler, ReactNode } from 'react';
 import { Typography } from '../..';
 
 export interface Props extends HTMLAttributes<HTMLButtonElement> {
@@ -10,10 +10,11 @@ export interface Props extends HTMLAttributes<HTMLButtonElement> {
   color?: 'red' | 'green' | 'blue' | 'yellow' | 'pink';
   icon?: ReactNode;
   link?: string;
+  onClickBtn?: MouseEventHandler<HTMLButtonElement>;
 }
 
 /**
- * sm button size is good to use,sm for floating action 
+ * sm button size is good to use,sm for floating action
  * @param children
  * pass text as a children.
  * @param variant
@@ -32,6 +33,9 @@ export const Button = ({
   rounded = 'sm',
   size,
   icon = null,
+  onClickBtn = () => {
+    console.log('clicked');
+  },
 }: Props) => {
   return variant === 'floating' ? (
     <button
@@ -45,6 +49,7 @@ export const Button = ({
     }
     ${`button__floating button--${color}`}
     `}
+      onClick={onClickBtn}
     >
       {icon !== null ? (
         <Typography variant="icon" textColor="white">
@@ -64,6 +69,7 @@ export const Button = ({
         : `button__outline button__outline--${color}`
     } button__rounded--${rounded} ${icon !== null ? 'button__icon' : ''}
     `}
+      onClick={onClickBtn}
     >
       {icon !== null ? (
         <Typography
