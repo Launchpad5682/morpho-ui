@@ -1,36 +1,23 @@
-.alert-box {
+@import url(../../styles/colors.css);
+
+.alert--box {
   padding: 0.8rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-.red {
-  color: rgb(139, 0, 0);
-  background-color: rgb(243, 212, 212);
+.alert--red {
+  background-color: var(--tomato-red-light);
 }
-
-.green {
-  color: rgb(0, 94, 0);
-  background-color: rgb(195, 255, 195);
+.alert--green {
+  background-color: var(--green-teal-light);
 }
-
-.yellow {
-  color: rgb(145, 145, 3);
-  background-color: rgb(255, 255, 206);
+.alert--blue {
+  background-color: var(--azraq-blue-light);
 }
-
-.blue {
-  color: rgb(0, 0, 104);
-  background-color: rgb(204, 204, 255);
+.alert--yellow {
+  background-color: var(--squash-blossom-light);
 }
-
-.sm {
-  font-size: 1rem;
-}
-
-.md {
-  font-size: 1.5rem;
-}
-
-.lg {
-  font-size: 2rem;
+.alert--pink {
+  background-color: var(--jalapeno-red-light);
 }
