@@ -14,31 +14,70 @@
 
 .badge__icon {
   position: relative;
-  font-size: 1.5rem;
-  width: 3rem;
-  height: 3rem;
+  font-size: 2rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   outline: none;
   border-radius: 50%;
-  background-color: var(--primary-light);
+}
+
+.badge__icon--red {
+  background-color: var(--tomato-red-light);
+}
+
+.badge__icon--yellow {
+  background-color: var(--squash-blossom-light);
+}
+
+.badge__icon--green {
+  background-color: var(--green-teal-light);
+}
+
+.badge__icon--blue {
+  background-color: var(--azraq-blue-light);
+}
+
+.badge__icon--pink {
+  background-color: var(--jalapeno-red-light);
 }
 
 .badge__icon--counter {
   position: absolute;
-  top: -0.3rem;
-  right: -0.3rem;
-  font-size: 0.8rem;
-  background-color: var(--primary-dark);
+  top: -15%;
+  right: -15%;
+  font-size: 1.2rem;
   display: inherit;
   justify-content: center;
   align-items: center;
   min-width: 20px;
-  height: 20px;
-  border-radius: 50%;
+  /* height: 20px; */
+  padding: 4px;
+  border-radius: 40%;
   color: white;
+}
+
+.icon__counter--red {
+  background-color: var(--tomato-red);
+}
+
+.icon__counter--yellow {
+  background-color: var(--squash-blossom);
+}
+
+.icon__counter--green {
+  background-color: var(--green-teal);
+}
+
+.icon__counter--blue {
+  background-color: var(--azraq-blue);
+}
+
+.icon__counter--pink {
+  background-color: var(--jalapeno-red);
 }
 
 .badge__avatar--online {
@@ -46,8 +85,8 @@
   bottom: 0;
   right: 0;
   background-color: var(--green-teal);
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
 }
 
@@ -56,7 +95,7 @@
   bottom: 0;
   right: 0;
   background-color: var(--tomato-red);
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
 }
