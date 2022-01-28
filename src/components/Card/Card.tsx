@@ -6,13 +6,40 @@
 - [x]  Vertical/Horizontal cards
 - [x]  Cards with shadow
  */
+
+// Webkit line clamp
 import './Card.css';
 import React, { HTMLAttributes, MouseEventHandler, ReactNode } from 'react';
 import { VscClose } from 'react-icons/vsc';
+import { Typography } from '../..';
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   type: 'text-image' | 'text-only';
+  headingColor?:
+    | 'white'
+    | 'black'
+    | 'red'
+    | 'green'
+    | 'yellow'
+    | 'blue'
+    | 'pink';
+  shadowColor?:
+    | 'white'
+    | 'black'
+    | 'red'
+    | 'green'
+    | 'yellow'
+    | 'blue'
+    | 'pink';
+  borderColor?:
+    | 'white'
+    | 'black'
+    | 'red'
+    | 'green'
+    | 'yellow'
+    | 'blue'
+    | 'pink';
   title?: string;
   subTitle?: string;
   imageURL?: string;
@@ -61,6 +88,9 @@ export const Card = ({
   size = 'md',
   title,
   subTitle,
+  headingColor,
+  shadowColor = 'black',
+  borderColor = 'black',
   shadow = false,
   dismiss = false,
   onDismiss = () => {
@@ -76,13 +106,18 @@ export const Card = ({
             : size === 'md'
             ? 'card__flexrow--md'
             : 'card__flexrow--lg'
-        } ${shadow === true ? 'card--shadow' : null}`}
+        } ${
+          shadow === true ? `card__shadow--${shadowColor}` : null
+        } card__border--${borderColor}`}
       >
         <img src={imageURL} className="image--fitheight" />
         <div className="card__flexrow--headingoverlay">
-          <span className="title">{title}</span>
-          <br />
-          <span className="subtitle">{subTitle}</span>
+          <Typography variant="h5" textColor={headingColor}>
+            {title}
+          </Typography>
+          <Typography variant="subtitle1" textColor={headingColor}>
+            {subTitle}
+          </Typography>
         </div>
         <div className="container">
           {dismiss === true ? (
@@ -102,7 +137,9 @@ export const Card = ({
             : size === 'md'
             ? 'card__flexcolumn--md'
             : 'card__flexcolumn--lg'
-        } ${shadow === true ? 'card--shadow' : null}`}
+        } ${
+          shadow === true ? `card__shadow--${shadowColor}` : null
+        } card__border--${borderColor}`}
       >
         {dismiss === true ? (
           <VscClose
@@ -113,9 +150,12 @@ export const Card = ({
         <div className="container">
           <img src={imageURL} className="image--fitwidth" />
           <div className="card__flexcolumn--headingoverlay">
-            <span className="title">{title}</span>
-            <br />
-            <span className="subtitle">{subTitle}</span>
+            <Typography variant="h5" textColor={headingColor}>
+              {title}
+            </Typography>
+            <Typography variant="subtitle1" textColor={headingColor}>
+              {subTitle}
+            </Typography>
           </div>
         </div>
         <div>{children}</div>
@@ -129,7 +169,9 @@ export const Card = ({
           : size === 'md'
           ? 'card__flexcolumn--md'
           : 'card__flexcolumn--lg'
-      } ${shadow === true ? 'card--shadow' : null}`}
+      } ${
+        shadow === true ? `card__shadow--${shadowColor}` : null
+      } card__border--${borderColor}`}
     >
       {dismiss === true ? (
         <VscClose
@@ -137,9 +179,12 @@ export const Card = ({
           onClick={onDismiss}
         />
       ) : null}
-      <span className="card__textonly--title">{title}</span>
-      <br />
-      <span className="card__textonly--subtitle">{subTitle}</span>
+      <Typography variant="h5" textColor={headingColor}>
+        {title}
+      </Typography>
+      <Typography variant="subtitle1" textColor={headingColor}>
+        {subTitle}
+      </Typography>
       {children}
     </div>
   );

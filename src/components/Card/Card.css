@@ -5,44 +5,79 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card__flexrow {
   display: flex;
   position: relative;
   flex-direction: row;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /*Sizes for card horizontal*/
 .card__flexcolumn--lg {
-  width: 25rem;
+  width: 30rem;
 }
 
 .card__flexcolumn--md {
-  width: 20rem;
+  width: 25rem;
 }
 
 .card__flexcolumn--sm {
-  width: 15rem;
+  width: 20rem;
 }
 
 /*Sizes for card vertical*/
 .card__flexrow--lg {
-  height: 12rem;
-  max-width: 40rem;
-  font-size: 1.2rem;
+  height: 20rem;
+  max-width: 50rem;
 }
 
 .card__flexrow--md {
-  height: 10rem;
-  max-width: 30rem;
-  font-size: 0.8rem;
+  height: 15rem;
+  max-width: 40rem;
 }
 
 .card__flexrow--sm {
-  height: 8rem;
-  max-width: 20rem;
-  font-size: 0.5rem;
+  height: 12rem;
+  max-width: 35rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  .card__flexrow--lg {
+    height: 14rem;
+    max-width: 30rem;
+  }
+
+  .card__flexrow--md {
+    height: 12rem;
+    max-width: 30rem;
+  }
+
+  .card__flexrow--sm {
+    height: 10rem;
+    max-width: 30rem;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 834px) {
+  .card__flexrow--lg {
+    height: 14rem;
+    max-width: 40rem;
+  }
+
+  .card__flexrow--md {
+    height: 12rem;
+    max-width: 35rem;
+  }
+
+  .card__flexrow--sm {
+    height: 10rem;
+    max-width: 30rem;
+  }
 }
 
 .card__flexcolumn--headingoverlay {
@@ -50,6 +85,7 @@
   bottom: 1rem;
   left: 0;
   color: white;
+  padding: 5px;
 }
 
 .card__flexrow--headingoverlay {
@@ -57,6 +93,7 @@
   bottom: 0;
   left: 0;
   color: white;
+  padding: 5px;
 }
 
 /*
@@ -67,8 +104,9 @@ having relative postitioning in vertical align
   position: relative;
 }
 
-.title {
-  font-size: 1.3rem;
+/*not in use*/
+/* .title {
+  font-size: 2rem;
   font-weight: 800;
   padding: 0 var(--paddling-text);
 }
@@ -77,15 +115,17 @@ having relative postitioning in vertical align
   font-size: 1rem;
   font-weight: 300;
   padding: 0 var(--paddling-text);
-}
+} */
 
 /*image fit in vertical and horizontal cards*/
 .image--fitheight {
   height: 100%;
+  border-radius: 10px 0 0 10px;
 }
 
 .image--fitwidth {
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 /*dismiss button positioning*/
@@ -111,6 +151,7 @@ having relative postitioning in vertical align
   position: relative;
   flex-direction: column;
   padding: 2rem;
+  border-radius: 10px;
 }
 
 .card__text-only--dismiss--position {
@@ -131,6 +172,51 @@ having relative postitioning in vertical align
 }
 
 /* shadow */
-.card--shadow {
-  box-shadow: rgb(131, 131, 131) 5px 5px 10px;
+.card__shadow--red {
+  box-shadow: var(--tomato-red-light) 5px 4px 10px;
+}
+
+.card__shadow--green {
+  box-shadow: var(--green-teal-light) 5px 4px 10px;
+}
+
+.card__shadow--blue {
+  box-shadow: var(--azraq-blue-light) 5px 4px 10px;
+}
+
+.card__shadow--pink {
+  box-shadow: var(--jalapeno-red-light) 5px 4px 10px;
+}
+
+.card__shadow--yellow {
+  box-shadow: var(--squash-blossom-light) 5px 4px 10px;
+}
+
+.card__shadow--white {
+  box-shadow: var(--white) 5px 4px 10px;
+}
+
+.card__shadow--black {
+  box-shadow: var(--black) 5px 4px 10px;
+}
+
+/*Card border color*/
+.card__border--red {
+  border: 2px solid var(--tomato-red);
+}
+
+.card__border--green {
+  border: 2px solid var(--green-teal);
+}
+
+.card__border--yellow {
+  border: 2px solid var(--squash-blossom);
+}
+
+.card__border--blue {
+  border: 2px solid var(--azraq-blue);
+}
+
+.card__border--pink {
+  border: 2px solid var(--jalapeno-red);
 }
