@@ -1,11 +1,21 @@
 import React, { MouseEventHandler, ReactNode } from 'react';
 import { HTMLAttributes } from 'react';
 import { VscClose } from 'react-icons/vsc';
+import { Typography } from '../..';
 import './Modal.css';
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   heading: string;
+  headingColor:
+    | 'white'
+    | 'black'
+    | 'red'
+    | 'green'
+    | 'yellow'
+    | 'pink'
+    | 'blue';
+  backgroundColor?: 'white' | 'dark';
   onClose?: MouseEventHandler;
 }
 
@@ -23,14 +33,24 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
  * @returns Modal
  */
 
-export const Modal = ({ heading, children, onClose }: Props) => {
+export const Modal = ({
+  heading,
+  backgroundColor = 'dark',
+  headingColor = 'white',
+  children,
+  onClose,
+}: Props) => {
   return (
     <div className="fullscreen">
       <div className="modal" onClick={onClose}></div>
-      <div className="modal__container">
+      <div className={`modal__container modal__container--${backgroundColor}`}>
         <div className="modal__container--header">
-          <span className="modal__container--heading">{heading}</span>
-          <VscClose onClick={onClose} className="icon--size" />
+          <Typography variant="h5" textColor={headingColor}>
+            {heading}
+          </Typography>
+          <Typography variant="h5" textColor={headingColor}>
+            <VscClose onClick={onClose} />
+          </Typography>
         </div>
         <div className="modal__container--body">{children}</div>
       </div>

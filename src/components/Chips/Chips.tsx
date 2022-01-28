@@ -39,13 +39,13 @@ export const Chips = ({
 }: Props) => {
   return (
     <>
-      {title !== '' ? <Typography variant="h4">{title}</Typography> : null}
+      {title !== '' ? <Typography variant="subtitle2">{title}</Typography> : null}
       <div className={`chips__container--${variant}`}>
         {chips !== undefined
           ? chips.map((chip) => (
               <span className={`chip--design chip--${chip.color}`} id={chip.id}>
-                <Typography variant="subtitle2">{chip.text} </Typography>
-                <Typography variant="subtitle2">
+                <Typography variant="subtitle1">{chip.text} </Typography>
+                <Typography variant="subtitle1">
                   <VscClose onClick={onCross} className="chip__closeicon" />
                 </Typography>
               </span>

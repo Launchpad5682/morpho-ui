@@ -1,10 +1,13 @@
 import React, { HTMLAttributes, MouseEventHandler } from 'react';
 import { VscClose } from 'react-icons/vsc';
+import { Typography } from '../..';
 import './SnackBar.css';
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   variant: 'baseline' | 'stacked' | 'leading';
   color: 'red' | 'green' | 'blue' | 'yellow' | 'pink';
+  backgroundColor: 'white' | 'black';
+  textColor: 'white' | 'black';
   message: string;
   buttonText: string;
   onButtonPress?: MouseEventHandler;
@@ -31,20 +34,29 @@ export const SnackBar = ({
   message,
   buttonText,
   color,
+  backgroundColor = 'black',
+  textColor = 'white',
   onButtonPress,
   onClose,
 }: Props) => {
   return (
-    <div className={`snackbar snackbar--${variant}`}>
-      <div className="snackbar__text">{message}</div>
+    <div
+      className={`snackbar snackbar--${variant} snackbar--${backgroundColor}`}
+    >
+      <div className="snackbar__text">
+        <Typography variant="subtitle1" textColor={textColor}>
+          {message}
+        </Typography>
+      </div>
       <div className="snackbar__buttonicon">
-        <button
-          onClick={onButtonPress}
-          className={`snackbar__button snackbar__button--${color}`}
-        >
-          {buttonText}
+        <button onClick={onButtonPress} className={`snackbar__button`}>
+          <Typography variant="button" textColor={color}>
+            {buttonText}
+          </Typography>
         </button>
-        <VscClose onClick={onClose} className="snackbar__closeicon" />
+        <Typography variant="button">
+          <VscClose onClick={onClose} />
+        </Typography>
       </div>
     </div>
   );

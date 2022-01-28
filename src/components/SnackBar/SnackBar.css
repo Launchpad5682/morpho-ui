@@ -1,17 +1,24 @@
 @import url(../../styles/colors.css);
 
 .snackbar {
-  background-color: var(--black);
   color: var(--white);
   display: flex;
   align-items: center;
   position: fixed;
   border-radius: 6px;
   gap: 8px;
-  width: 25rem;
-  box-shadow: var(--hint-of-elusive-blue) 0 5px 10px;
+  width: 30rem;
+  /* box-shadow: var(--hint-of-elusive-blue) 0 5px 10px; */
   font-size: 1rem;
   padding: 10px;
+}
+
+.snackbar--black {
+  background-color: var(--black);
+}
+
+.snackbar--white {
+  background-color: var(--white);
 }
 
 .snackbar--baseline {
@@ -48,12 +55,10 @@
 }
 
 .snackbar__button {
-  font-size: 1rem;
   background-color: transparent;
   border: none;
   border-radius: 5px;
   outline: none;
-  font-weight: 600;
 }
 
 .snackbar__button:hover {
@@ -62,7 +67,7 @@
   transition-timing-function: ease-in-out;
 }
 
-.snackbar__button--red {
+/* .snackbar__button--red {
   color: var(--tomato-red);
 }
 
@@ -80,7 +85,7 @@
 
 .snackbar__button--pink {
   color: var(--jalapeno-red);
-}
+} */
 
 .snackbar__closeicon {
   font-size: 1.5rem;
