@@ -2,6 +2,7 @@ import { Meta } from '@storybook/react';
 import { Card } from '../src/components/Card/Card';
 import { WiAlien, WiBarometer, WiCelsius } from 'react-icons/wi';
 import './styles/Card.css';
+import { Typography } from '../src';
 
 const meta: Meta = {
   title: 'Card',
@@ -22,10 +23,10 @@ export const CardWithOnlyTextAndDismiss = Default.bind({});
 CardWithTextOverlayVertical.args = {
   children: (
     <div>
-      <p className="paragraph">
+      <Typography variant="body2" textColor="black">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      </Typography>
       <div className="bottom-bar">
         <WiCelsius className="icon-size" />
         <WiBarometer className="icon-size" />
@@ -44,10 +45,10 @@ CardWithTextOverlayVertical.args = {
 CardWithTextOverlayHorizontal.args = {
   children: (
     <div>
-      <p className="paragraph">
+      <Typography variant="body2" textColor="black">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      </Typography>
       <div className="bottom-bar">
         <WiCelsius className="icon-size" />
         <WiBarometer className="icon-size" />
@@ -67,10 +68,10 @@ CardWithTextOverlayHorizontal.args = {
 CardWithTextOverlayAndDismissHorizontal.args = {
   children: (
     <div>
-      <p className="paragraph">
+      <Typography variant="body2" textColor="black">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      </Typography>
       <div className="bottom-bar">
         <WiCelsius className="icon-size" />
         <WiBarometer className="icon-size" />
@@ -91,10 +92,10 @@ CardWithTextOverlayAndDismissHorizontal.args = {
 CardWithTextOverlayAndDismissVertical.args = {
   children: (
     <div>
-      <p className="paragraph">
+      <Typography variant="body2" textColor="black">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      </Typography>
       <div className="bottom-bar">
         <WiCelsius className="icon-size" />
         <WiBarometer className="icon-size" />
@@ -115,7 +116,7 @@ CardWithTextOverlayAndDismissVertical.args = {
 CardWithOnlyText.args = {
   children: (
     <div>
-      <p>
+      <Typography variant="body2" textColor="black">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -123,7 +124,7 @@ CardWithOnlyText.args = {
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
-      </p>
+      </Typography>
       <div className="bottom-bar">
         <WiCelsius className="icon-size" />
         <WiBarometer className="icon-size" />
@@ -137,27 +138,26 @@ CardWithOnlyText.args = {
 };
 
 CardWithOnlyTextAndDismiss.args = {
-    children: (
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
-        </p>
-        <div className="bottom-bar">
-          <WiCelsius className="icon-size" />
-          <WiBarometer className="icon-size" />
-          <WiAlien className="icon-size" />
-        </div>
+  children: (
+    <div>
+      <Typography variant="body2" textColor="black">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </Typography>
+      <div className="bottom-bar">
+        <WiCelsius className="icon-size" />
+        <WiBarometer className="icon-size" />
+        <WiAlien className="icon-size" />
       </div>
-    ),
-    title: 'This is title',
-    subTitle: 'This is subtitle',
-    shadow: true,
-    dismiss: true,
-  };
-  
+    </div>
+  ),
+  title: 'This is title',
+  subTitle: 'This is subtitle',
+  shadow: true,
+  dismiss: true,
+};

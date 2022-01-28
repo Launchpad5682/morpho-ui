@@ -20,7 +20,7 @@ export const IconBadge = Default.bind({});
 IconBadge.args = {
   children: <BiMessage />,
   variant: 'icon',
-  number: 2,
+  number: 100,
 };
 
 export const AvatarBadge = Default.bind({});
@@ -29,4 +29,12 @@ AvatarBadge.args = {
   children: <Avatar size="sm-avatar" />,
   variant: 'avatar',
   mode: 'online',
+};
+
+export const AvatarBadgeOffline = Default.bind({});
+
+AvatarBadgeOffline.args = {
+  children: <Avatar size="sm-avatar" />,
+  variant: 'avatar',
+  mode: 'offline',
 };

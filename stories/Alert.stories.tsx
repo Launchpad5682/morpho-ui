@@ -10,21 +10,33 @@ export default meta;
 
 const Default = (args) => <Alert {...args}>This is an alert message</Alert>;
 
-export const SmallAlert = Default.bind({});
-export const MediumAlert = Default.bind({});
-export const LargeAlert = Default.bind({});
+export const RedAlert = Default.bind({});
+export const GreenAlert = Default.bind({});
+export const YellowAlert = Default.bind({});
+export const BlueAlert = Default.bind({});
+export const PinkAlert = Default.bind({});
 
-SmallAlert.args = {
+RedAlert.args = {
+  children: 'This is an alert',
+  color: 'red',
+};
+
+GreenAlert.args = {
+  children: 'This is an alert',
   color: 'green',
-  size: 'sm',
 };
 
-MediumAlert.args = {
+YellowAlert.args = {
+  children: 'This is an alert',
   color: 'yellow',
-  size: 'md',
 };
 
-LargeAlert.args = {
+BlueAlert.args = {
+  children: 'This is an alert',
   color: 'blue',
-  size: 'lg',
+};
+
+PinkAlert.args = {
+  children: 'This is an alert',
+  color: 'pink',
 };
